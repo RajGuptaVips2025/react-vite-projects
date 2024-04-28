@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2DC7FF;
+    text-align: center;
+}
+
+.main .container {
+    height: 70vh;
+    display: flex;
+    /*This makes the container a flex container, allowing its children to be flex items.*/
+    align-items: center;
+    /*This centers the flex items vertically within the container.*/
+    justify-content: center;
+    /*This centers the flex items horizontally within the container.*/
+}
+
+.main .container .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    /*
+        1. The .game container is set to have a fixed height and width (60vmin),
+        making it a square container relative to the viewport size.
+        
+        2. display: flex; makes the .game container a flex container.
+
+        3. flex-wrap: wrap; allows the flex items (buttons with the .box class) to wrap onto multiple lines if they exceed the container's width.
+
+        4. justify-content: center; centers the flex items horizontally within the .game container. 
+        align-items: center; centers the flex items vertically within the .game container.
+    */
+}
+
+.main .container .game .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    font-size: 8vmin;
+    color: #ffffc7;
+}
+
+.hide{
+    display: none;
+}
